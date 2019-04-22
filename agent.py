@@ -3,7 +3,7 @@ from deepdrive_api.client import get_action, Client
 
 def main():
     env = Client(is_remote_client=True, render=True)
-    forward = get_action(throttle=1)
+    forward = get_action(throttle=1, steering=0, brake=0)
     done = False
     while True:
         while not done:
